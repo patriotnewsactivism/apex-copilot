@@ -4,13 +4,13 @@ Apex keeps the React overlay, the chat routes, the operator-session checks, the 
 
 Do not set `FEATURE_COPILOT` or `VITE_FEATURE_COPILOT` to an enabled value. Leave `.env.example` false. Do not add either name in Railway. Do not deploy.
 
-Pin a commit. Do not float on a branch name. The specifier is:
+Pin a commit. Do not float on a branch name. The specifier adopted by draft pull request https://github.com/patriotnewsactivism/Apex/pull/318 is:
 
 ```json
-"apex-copilot": "github:patriotnewsactivism/apex-copilot#<40-character-sha>"
+"apex-copilot": "github:patriotnewsactivism/apex-copilot#f272c147f92eb7827e1fb389acc69b6084089df1"
 ```
 
-Use the commit named in the README status block. `dist/` is already in that commit. Apex `pnpm-workspace.yaml` runs dependency install scripts only for the packages in `onlyBuiltDependencies` and `allowBuilds`. Do not add `apex-copilot` to either list. `prepare` will not run, and the committed `dist/` is what Node and Vite load.
+`dist/` is already in that commit. Apex `pnpm-workspace.yaml` runs dependency install scripts only for the packages in `onlyBuiltDependencies` and `allowBuilds`. Do not add `apex-copilot` to either list. `prepare` will not run, and the committed `dist/` is what Node and Vite load.
 
 `minimumReleaseAge` does not apply to a git dependency.
 
