@@ -7,10 +7,10 @@ Do not set `FEATURE_COPILOT` or `VITE_FEATURE_COPILOT` to an enabled value. Leav
 Pin a commit. Do not float on a branch name. The specifier adopted by draft pull request https://github.com/patriotnewsactivism/Apex/pull/318 is:
 
 ```json
-"apex-copilot": "github:patriotnewsactivism/apex-copilot#f272c147f92eb7827e1fb389acc69b6084089df1"
+"apex-copilot": "github:patriotnewsactivism/apex-copilot#683d8c92e19953a09795139f59d5e849d8826e39"
 ```
 
-`dist/` is already in that commit. Apex `pnpm-workspace.yaml` runs dependency install scripts only for the packages in `onlyBuiltDependencies` and `allowBuilds`. Do not add `apex-copilot` to either list. `prepare` will not run, and the committed `dist/` is what Node and Vite load.
+`dist/` is already in that commit, and the package has no `prepare` script. Apex `pnpm-workspace.yaml` runs dependency install scripts only for the packages in `onlyBuiltDependencies` and `allowBuilds`. Do not add `apex-copilot` to either list. Node and Vite load the committed `dist/`.
 
 `minimumReleaseAge` does not apply to a git dependency.
 
