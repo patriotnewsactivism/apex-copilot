@@ -1,0 +1,22 @@
+export { COPILOT_CAPABILITY_BOUND_TO, COPILOT_CAPABILITY_SCOPE, COPILOT_CAPABILITY_TTL_MS, COPILOT_CLIENT_FLAG, COPILOT_CONTACT_FILTERS, COPILOT_CONTROL_TOOL_NAME, COPILOT_DENY_TOKENS, COPILOT_EXCLUDED_PAGES, COPILOT_HARD_DENY_ACTIONS, COPILOT_IDLE_TIMEOUT_MS, COPILOT_LEAD_FILTERS, COPILOT_MAX_ACTIONS_PER_MINUTE, COPILOT_MAX_ACTIONS_PER_SESSION, COPILOT_MAX_ACTIONS_PER_TOOL_CALL, COPILOT_OPERATOR_SESSION_HEADER, COPILOT_PANEL_EVENT, COPILOT_READ_ONLY_CHAT_TOOL_NAMES, COPILOT_SAFE_PAGES, COPILOT_SERVER_FLAG, } from './types.js';
+export type { CopilotAction, CopilotPanelAction, CopilotPanelActionResult, CopilotPanelEventDetail, CopilotSafePage, CopilotSearchPage, CopilotUiController, } from './types.js';
+export { isCopilotClientFeatureEnabled, isCopilotFeatureEnabled } from './flags.js';
+export { cssEscape } from './css-escape.js';
+export { copilotActionSchema, isCopilotChatToolAllowed, isHardDeniedCopilotAction, validateCopilotAction, validateCopilotActions, } from './registry.js';
+export type { CopilotActionValidation } from './registry.js';
+export { copilotActionTarget, describeCopilotAction, isCopilotPanelAction } from './client.js';
+export { buildCopilotSessionAuditEvent, buildCopilotUiAuditEvent, copilotAuditEntity, queuedAuditResult, } from './audit.js';
+export type { CopilotSessionAuditEvent, CopilotSessionAuditEventRow, CopilotUiAuditEvent, CopilotUiAuditStatus, } from './audit.js';
+export { adminBearerActivatesCopilot, copilotAccessDecision, copilotModeAllowed } from './access.js';
+export { capabilityAuthorizesSend, createCopilotCapabilityStore } from './capability.js';
+export type { CopilotCapabilityClaims, CopilotCapabilityFailure, VerifiedCopilotCapability } from './capability.js';
+export { createCopilotRateLimiter } from './rate-limit.js';
+export type { CopilotRateLimitDecision } from './rate-limit.js';
+export { undoForCopilotAction } from './undo.js';
+export type { CopilotUndo, CopilotUndoPrior } from './undo.js';
+export { COPILOT_DO_IT_PROMPT, COPILOT_DO_IT_TTL_MS, COPILOT_MEDIUM_RISK_ACTIONS, createDoItChallenge, mediumRiskActionAvailability, satisfyDoItChallenge, } from './challenge.js';
+export type { DoItActor, DoItChallengePublic, DoItChallengeRecord } from './challenge.js';
+export { copilotVoiceReadback } from './readback.js';
+export type { CopilotVoiceReadback } from './readback.js';
+export { COPILOT_UNSUPPORTED_CONTROLS, LEAD_OPEN_RECORD, unsupportedControl } from './unsupported.js';
+//# sourceMappingURL=index.d.ts.map
