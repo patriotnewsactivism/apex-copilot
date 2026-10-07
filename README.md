@@ -25,7 +25,7 @@ When the design doc and the merged Apex code disagree, the merged code wins. Tho
 | `apex-copilot` | Flag parser, safe pages, Zod action schema, deny list, validation results, read-only chat tool names, audit event shapes, and the deferred gates. |
 | `apex-copilot/client` | Dashboard types and narration helpers. This entry does not import Zod, Node crypto, or `process`. |
 
-`dist/` is committed. Apex allows install scripts only for a short built-dependency list, and this package is not on that list, so a consumer install does not run `prepare`.
+`dist/` is committed. The package has no `prepare` script, so an Apex install does not need to allow a build. Apex allows dependency install scripts only for the packages already on its allow list.
 
 There is one action protocol. Deferred gates do not accept a second set of actions.
 
