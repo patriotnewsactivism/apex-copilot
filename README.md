@@ -6,7 +6,7 @@ Public contract for Apex Copilot. The running dashboard stays in [patriotnewsact
 
 The MVP is merged in Apex. Production flags are unset, so the mode is off.
 
-Apex adoption is an open draft pull request: https://github.com/patriotnewsactivism/Apex/pull/318. It pins `f272c147f92eb7827e1fb389acc69b6084089df1` and is not merged. It does not turn the mode on.
+Apex adoption is an open draft pull request: https://github.com/patriotnewsactivism/Apex/pull/318. It pins `683d8c92e19953a09795139f59d5e849d8826e39` and is not merged. It does not turn the mode on.
 
 - Apex pull request: https://github.com/patriotnewsactivism/Apex/pull/300
 - Merge commit: [`bc9d8422970c4308847fa46ea0129733526eded4`](https://github.com/patriotnewsactivism/Apex/commit/bc9d8422970c4308847fa46ea0129733526eded4) (head `44fb82f7f7dfb99ecc8f56d30db05e31c3bc964c`, merged 2026-10-06)
